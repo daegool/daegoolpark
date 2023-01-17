@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="server05.jsp">
+<h3>도서 검색</h3>
+<fieldset>
+<legend>로그인</legend>
+<label>아이디:<input type="text" name="id" size="20" maxlength="20"></label><br>
+<label>비밀번호:<input type="password" name="pwd"size="20"></label>
+</fieldset>
+<fieldset>
+<legend>통합 검색</legend>
+도서명:<input type="text" name="book_search" size="50"><br>
+검색범위:<label>키워드<input type="radio" name="s_type" value="keyword"></label>
+<label>본문내용<input type="radio" name="s_type" value="content"></label><br>
+자료유형:
+<label><input type="checkbox" name="d_type" value="all">전체</label>
+<label><input type="checkbox" name="d_type" value="book">단행본</label>
+<label><input type="checkbox" name="d_type" value="paper">학술지</label>
+<label><input type="checkbox" name="d_type" value="non_book">비도서</label><br>
+</fieldset>
+<button type="submit">검색</button>
+<button type="reset">지우기</button>
+</form>
+</body>
+</html>

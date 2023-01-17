@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>라벨</h3>
+<form action="server02.jsp" method="get">
+<fieldset>
+<legend>필수입력사항</legend>
+회원여부:
+      <label for="yes">회원</label>
+      <input type="radio" name="member" value="yes" checked id="yes">
+      <label for="no">비회원</label>
+      <input type="radio" name="member" value="no" id="no"><br>
+ 성 별 :<label for="m">남성</label>
+       <input type="radio" name="sex" value="female" checked id="m"> 
+       <label for="f">여성</label>
+       <input type="radio" name="sex" value="male" id="f"> <br>
+</fieldset>       
+<fieldset> 
+<legend>선택사항</legend>     
+ 취미(중복 선택가능):
+     <label>  <input type="checkbox" name="hobby" value="read">독서 </label>
+     <label>  <input type="checkbox" name="hobby" value="movie">영화 </label>
+     <label> <input type="checkbox" name="hobby" value="music">음악 </label>
+     <label> <input type="checkbox" name="hobby" value="sports">스포츠 </label><br>
+</fieldset>      
+ <p>   <input type="submit" value="전송">   
+</form>
+</body>
+</html>

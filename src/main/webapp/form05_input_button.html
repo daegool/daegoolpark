@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>버튼입력</h3>
+<form action="server03.jsp" method="get">  
+ <p>취미(중복 선택가능):
+       <input type="checkbox" name="hobby" value="read">독서
+       <input type="checkbox" name="hobby" value="movie" checked>영화
+       <input type="checkbox" name="hobby" value="music">음악
+       <input type="checkbox" name="hobby" value="sports">스포츠<br>
+ </p>
+ 직업:<select name="job" size="4" multiple="multiple">
+      <option value="student">학생</option>
+      <option value="company">회사원</option>
+      <option value="teacher" selected>교사</option>
+      <option value="sales">자영업</option> 
+      <option value="other">기타</option>
+</select>      
+       <hr>
+     <input type="submit" value="전송하기"> 
+     <input type="reset" value="초기화"> 
+     <input type="button" value="확인하기" onclick="alert('입력값 확인')">
+     <input type="image" src="./img/submit.gif" alt="전송버튼">
+     <button>전송</button> <!-- form내에서 사용시 서버로 값 전송 -->
+</form>   
+</body>
+</html>

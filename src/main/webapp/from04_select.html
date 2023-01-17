@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>select</h3>
+<form action="" method="get">
+직업:<select name="job" size="4" multiple="multiple">
+      <option value="student">학생</option>
+      <option value="company">회사원</option>
+      <option value="teacher" selected>교사</option>
+      <option value="sales">자영업</option> 
+      <option value="other">기타</option>
+</select>
+<br>
+<input type="submit" value="전송">
+</form>
+<hr>
+전공선택:
+<select size="5" multiple="multiple">
+  <optgroup label="공학"> <!-- select리스트의 옵션 값들을 그룹핑하는 기능의 요소 -->
+   <option>컴퓨터</option>
+   <option>전자</option>
+   <option>전기</option>
+  </optgroup>
+  <optgroup label="인문사회">
+   <option>철학</option>
+   <option>역사</option>
+   <option>경영</option>
+  </optgroup> 
+</select>
+</body>
+</html>

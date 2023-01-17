@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>도서 예양 대출</h3>
+<form action="" method="get">
+<label>성명 : </label><input type="text" name="p-name" required="required"> <br>
+<label>전화 : </label><input type="tel" name="p-tel" required 
+pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}" placeholder="00*-000*-0000"><br>
+<label>이메일 : </label><input type="email" name="p-email" required
+placeholder="aaa@bbb.ccc"><br>
+<p>
+<label>도서명 : </label><input type="text" name="book_title" size="25" required><br>
+<label>예약 희망일 : </label><input type="date" min="2023-01-30" name="last_date"required><br>
+<label>수령 시간 : </label><input type="time" name="time_from" min="09:00" max="18:00">에서
+        <input type="time" name="time_to" min="09:00" max="18:00"> 사이 <br>
+  <지불방법>:
+  <ul>
+    <li>카드결제</li>
+     <li>모바일결제</li>
+      <li>계좌이체</li>
+  </ul>
+  <br>
+  <select name="point">
+   <option>포인트적립 </option>
+     <option>포인트미적립 </option>
+  </select>
+    <hr>
+      <input type="submit" value="예약하기">
+ </form>
+</body>
+</html>

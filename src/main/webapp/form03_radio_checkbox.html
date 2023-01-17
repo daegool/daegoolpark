@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>라디오&체크 박스</title>
+<style type="text/css">
+form{border: 1px dotted red;}
+div{border:1px dotted green;}
+</style>
+</head>
+<body>
+<h3>라디오 박스와 체크박스</h3>
+<form action="server02.jsp" method="get">
+<fieldset>
+<legend>필수입력사항</legend>
+회원여부:<input type="radio" name="member" value="yes" checked>회원
+      <input type="radio" name="member" value="no">비회원<br>
+ 성 별 :<input type="radio" name="sex" value="female" checked>여성 
+       <input type="radio" name="sex" value="male" > 남성<br>
+</fieldset>       
+<fieldset> 
+<legend>선택사항</legend>     
+ 취미(중복 선택가능):
+       <input type="checkbox" name="hobby" value="read">독서
+       <input type="checkbox" name="hobby" value="movie">영화
+       <input type="checkbox" name="hobby" value="music">음악
+       <input type="checkbox" name="hobby" value="sports">스포츠<br>
+</fieldset>      
+ <p>   <input type="submit" value="전송">   
+</form>
+</body>
+</html>
