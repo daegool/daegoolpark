@@ -1,0 +1,31 @@
+@charset "UTF-8";
+h2{color:red;}
+.highlight{border:solid;}
+#profile{
+	border:solid;
+	border-color:blue;
+}
+.thumbnail_grid{
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+}
+.thumbnail{width:100%;}
+
+/* 9_1_6.css */
+#stat_bar{
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	border-top:1px solid gray;
+	border-bottom:1px solid gray;
+	
+	margin-bottom:5px;
+	margin-top:5px;;
+	}
+.stat{
+	text-align:center
+}
+/* 9_1_7.css */	
+.circle_pic{
+	border:1px solid white;
+	border-radius:50%;
+}

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+#profile{
+ width:50px;
+ width:50px;		
+}
+
+#highlight_pic{
+margin-left:auto;
+margin-right:auto;
+}
+
+#highlight_area{
+	display:grid;
+    grid-template-rows:1fr 1fr;
+}
+.highlight{
+	text-align:center;
+}
+
+
+/*#profile_info{display:grid;
+grid-template-rows:1fr 1fr;
+}*/

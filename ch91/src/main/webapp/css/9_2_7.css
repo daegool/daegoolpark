@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+#sub_icons{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	
+	text-align: center;
+	font-size: 15px;/* fontawesome 아이콘 사이즈 */
+	
+	height: 30px;
+	margin-bottom: 20px;
+}
+.selected{
+	border-bottom: solid gray 3px;
+}

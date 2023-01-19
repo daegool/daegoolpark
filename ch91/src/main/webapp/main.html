@@ -1,0 +1,93 @@
+<!DOCTYPE html><html><head>
+<meta charset="UTF-8">
+<title>Welcome to SM서적</title>
+<style>
+/* style-size */
+.wrap{width: 700px; min-height: 600px;}
+header{height: 80px;}
+header > span{padding: 30px 10px;}
+nav{width: 700px;}
+nav a{height: 20px;}
+footer{height: 70px;}
+aside button{width: 85px;}
+footer img{height: 32px;}
+
+/* style-layout */
+body{margin: 0; padding: 0; /* 모든 요소들의 마진, 패딩 통일  */
+     line-height: 1.2em;/* 줄간격   */
+     font-size: 0.75em;/* 글자크기 */
+}
+.wrap{margin: 0; margin-right: auto; margin-left: auto;}/* wrap이 감싸고 있는 요소들을 중앙 정렬 */
+header{vertical-align: middle;}/* header내의 콘텐츠의 수직 정렬 */
+.left{float:left;}/* 블럭레벨 요소를 왼쪽에 띄워서 배치  */
+.right{float:right;}/* 블럭레벨 요소를 오른쪽에 띄워서 배치 */
+#logo{float: left; vertical-align: middle; margin: 30px 0 0 20px;}
+footer #copyright{margin: 20px 0 0 10px; float:left;}
+footer #SNS{margin: 10px 20px 0 0; float: right;}
+hr{clear: both;}/* 위쪽에 배치한 요소들의 float 속성을 현재 위치에서 제거함. */
+article{margin: 5px 0 10px 0;}
+aside{margin: 5px;}
+nav{margin: 0 0 20px 0; float: left;}
+nav ul  li {float: left; margin: 0 5px; /* 위/아래 0, 좌/우 5px */ list-style: none;}
+nav a{display:block; padding:5px;}
+a{text-decoration: none;}
+
+/* presentation */
+body{background-color: gray;}/* 화면에 봉는 모든 요소들의 배경색-회색으로 지정 */
+.wrap{text-align: left; background-color: white;} 
+img{border: none;}/* 이미지 요소의테두리 없애기 */
+#logo{color: darkblue;font-size: 48px;}/* 글자색, 크기지정  */
+header .right a:hover{color: gray;}
+nav{background-color: aqua;}
+nav ul{list-style: none; font-family: verdana, Geneva, sans-serif;
+       font-size: 14px; font-weight: bold; color:#ff0099;}
+nav a{color: #000000; border-style: hidden hidden solid hidden; border-color: transparent;}/* transparent:투명하게 */
+nav a:hover{ color: #2b4480; border-color: blue;}/* 마우스를 올렸을 때 글자색과 테두리 스타일 적용  */
+footer #copyright{font-family: consolas;}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<a id="logo">SM Bookstore</a>
+<span class="right">
+	<a href="login.html" target="display_area">로그인</a> |
+	<a href="signup.html" target="_blank">회원가입</a>
+</span>
+</header>
+<nav>
+<ul>
+	<li><a href="domestic_books.html"  target="display_area">국내도서</a></li>
+	<li><a href="foreign_books.html"  target="display_area">해외번역도서</a></li>
+	<li><a href="music.html" target="display_area">음반/DVD</a></li>
+	<li class="right"><a href="order.html"  target="display_area">주문하기</a></li>
+</ul>
+</nav>
+<hr>
+<article class="left">
+<iframe name="display_area" src="./images/books.jpg" width="600px" height="500px"></iframe>
+</article>
+
+<aside class="right">
+	<button id="all" disabled>전체</button>
+	<button id="best" disabled>베스트셀러</button>
+	<button id="recommend" disabled>추천도서</button>
+	<button id="memo" disabled>메모하기</button>
+	<button id="location" disabled>현재위치</button>
+</aside>
+
+<hr>
+<footer>
+ <div id="copyright">
+  Copyright (c) 2023 SM Bookstore Inc. All right reserved
+ </div>
+ <div id="SNS">
+  <a href="http://facebook.com" target="_blank"><img src="./images/facebook.png"></a>
+  <a href="http://twitter.com" target="_blank"><img src="./images/twitter.png"></a>
+  <a href="plus.google.com" target="_blank"><img src="./images/googleplus-icon.png"></a>
+ </div>
+</footer>
+</div>
+</body>
+</html>

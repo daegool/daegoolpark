@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+    div {
+        width:150px;
+        height:150px;
+    }
+    img {
+        width:100%;
+        height:100%;
+       /* object-fit:cover; *//*미디어 일부가 잘리더라도 비율을 유지한 채, 부모 요소에 꽉 들어맞게 채우는 옵션*/
+       /* object-fit:fill;   *//*미디어를 부모요소에 꽉 들어맞게 채움, 찌그러질 수 있음*/
+          object-fit:contain; /*미디어의 비율을 유지하고 부모요소안에 꽉채움. 크기가 축소될수 있음*/
+    }
+</style>
+</head>
+<body>
+<h3>이미지 정사각형으로 자르기 - object-fit</h3>
+<!-- 이미지 정사각형으로 마들기
+  1. 부모태그로 감싸기
+  2. 부모태그의 크기를 정사각형으로 지정
+  3. 이미지의 가로 세로를 100%로 지정
+ -->
+<div>
+    <img src="img/hl 1.jpg"/>
+</div>
+</body>
+</html>

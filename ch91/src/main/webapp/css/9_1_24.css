@@ -1,0 +1,36 @@
+@charset "UTF-8";
+#top{
+display:grid;
+grid-template-columns:4fr 6fr 4fr;
+height:30px;
+/* 9_1_26.css  */
+border-bottom: solid gray 0.1px;
+margin-bottom:10px;
+}
+
+#top img{
+	margin-left:auto;
+	margin-right:auto;
+	
+	height:100%;
+	object-fit: contain;
+}
+
+/*9_1_25.css*/
+#top input{
+	height:60%;
+	width:95%;
+	
+	margin-left:auto;
+	margin-right:autp;
+	margin-top:auto;
+	margin-bottom:auto;
+	
+	text-align:center;
+	background-color:rgb(250,250,250);
+	border:solid gray 1px; 
+	border-radius:3px;
+	
+	font-size:10px;
+	font-weight:100;
+}

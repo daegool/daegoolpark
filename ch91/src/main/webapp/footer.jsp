@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<footer>
+<div id="copyright">
+       Copyright (c) 2016 SM Bookstore Inc. All rights reserved
+</div>
+
+ <div id="SNS">
+       <a href="http://facebook.com" target="_blank">
+           <img src="./images/facebook.png" height="32" alt="Facebook">
+       </a>
+       <a href="http://twitter.com" target="_blank">
+           <img src="./images/twitter.png" height="32" alt="Twitter">
+       </a>
+       <a href="http://plus.google.com" target="_blank">
+           <img src="./images/googleplus-icon.png" height="32" alt="Google Plus">
+       </a>
+    </div>
+</footer>   
+</body>
+</html>

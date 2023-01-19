@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+#profile{
+	display: grid;
+	grid-template-columns:1fr 3.5fr;
+}
+#profile_info{
+	display: grid;
+	grid-template-rows:1fr 1fr;
+	
+    height: 50px; 
+}

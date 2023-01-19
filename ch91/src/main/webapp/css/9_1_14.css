@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+
+
+
+
+#highlight_pic{
+margin-left:auto;
+margin-right:auto;
+}
+
+#highlight_area{	
+	display:grid;
+	/*grid-template-columns:1fr 1fr;*/
+   grid-template-columns:45px 45px 1fr;/*나머지 영역은 1fr이 채움*/
+}
+
+.highlight{text-align:center}
