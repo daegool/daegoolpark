@@ -1,0 +1,31 @@
+<!DOCTYPE html><html><head>
+<meta charset="UTF-8">
+<title>swith문</title>
+</head>
+<body>
+<script>
+
+var choice = prompt("월을 입력하세요");
+
+/* choice의 값에 따라 실행, 미리 지정한 case 문의 값에 따라 해당 명령문 실행 */
+
+var schedule="";
+switch(choice){
+case "1":  
+case "12":
+case "2": alert("겨울");	
+          break; 
+case "3":  
+case "4": 
+case "5": alert("봄");
+          break;
+case "6":
+case "7":
+case "8": alert("여름");
+          break;
+default: alert("가을");
+}
+
+</script>
+</body>
+</html>

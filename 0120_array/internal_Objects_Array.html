@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+/* new Array()내장객체로 생성 */
+var book_arr=new Array('멀티미디어 배움터2.0','생능출판사','최윤철,임순범',25000, 442);
+
+document.write("<p>"+book_arr.length+"</p>");
+
+/* [] 표기법(notation)으로 생성 */
+var book_arr2=['멀티미디어 배움터2.0','생능출판사','최윤철,임순범',25000, 442];
+document.write("<p>"+book_arr2.length+"</p>");
+document.write("<hr>");
+
+/* 비어있는 배열 */
+var arr = new Array();
+document.write("<p>"+arr.length+"</p>");
+arr[0]="a";
+arr[2]="b";
+arr[5]=999; /* 자바스크립트에서 저장되는 배열의 요소값은 타입이 서로 달라도됨. */
+document.write("<p>"+arr.length+"</p>");
+document.write("<p>a[0]:"+arr[0]+"</p>");/* 배열의 인덱스번호:0부터 배열길이-1까지 */
+document.write("<p>a[1]:"+arr[1]+"</p>");
+document.write("<p>a[2]:"+arr[2]+"</p>");
+document.write("<p>a[3]:"+arr[3]+"</p>");
+document.write("<p>a[4]:"+arr[4]+"</p>");
+document.write("<p>a[5]:"+arr[5]+"</p>");/* 배열의 길이가 가변적으로 늘어남. */
+document.write("<p>a[6]:"+arr[6]+"</p>");
+document.write("<hr><hr>");
+var arr2 =[];
+document.write("<p>"+arr2.length+"</p>");
+arr2[0] = 1;
+arr2[4] = 10;
+document.write("<p>"+arr2.length+"</p>");
+arr2.length =3;
+document.write("<p>"+arr2.length+"</p>");/* 배열의 길이가 가변적으로 줄어듬. */
+
+</script>
+</body>
+</html>

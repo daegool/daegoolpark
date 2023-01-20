@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>내장객체-Date</title>
+</head>
+<body>
+<script>
+var today = new Date(); 
+var y = today.getFullYear();
+var m = today.getMonth();
+var d = today.getDate();
+
+document.write("<p>"+y);
+document.write("<p>"+(m+1));/* 월은 0부터 11일까지 */
+document.write("<p>"+d);
+document.write("<p>"+y+"년"+(m+1)+"월"+d+"일");
+
+/* 값 설정 set+함수(값) ; */
+today.setFullYear(2022);
+document.write("<p>"+today.getFullYear()+"년"+(m+1)+"월"+d+"일");
+</script>
+
+</body>
+</html>

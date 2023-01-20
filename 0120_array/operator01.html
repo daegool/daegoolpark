@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>연산자</title>
+</head>
+<body>
+<script>
+var a=10,b=20,c=30;
+console.log(a+b, a-b,a*b, a/b, "나머지:",a%b);
+a++;/* a에 저장된 10을 1증가시겨 11로 바꿔서 저장  */
+console.log(a);
+a--;/* a에 저장된 11을 1감소시겨 10로 바꿔서 저장  */
+console.log(a);
+/* 비교연산 */
+console.log(a>b, a<b, a>=b, a<=b);
+console.log(a==b, a==a, a!=b, a!=a, a=="10");
+/* 값과 타입까지 비교 */
+console.log(a===b, a===a, a!==b, a!==a, a==="10");
+/* 논리 연산  */
+console.log(!(a==b),!(a==a), true || false, true && false );
+</script>
+</body>
+</html>

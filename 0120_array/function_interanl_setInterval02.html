@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+/* 함수선언 function 함수명(매개변수){실행문(명령문);} */
+function show_alert(){
+	alert("5 초 지남...");
+}
+function show_message(){
+	console.log("3초 지남");
+}
+
+/* 사용자 정의 함수 호출 
+  setInterval(함수명,밀리초);
+*/
+setInterval(show_message, 3000);/* 3초 간격으로  실행 */
+</script>
+</body>
+</html>

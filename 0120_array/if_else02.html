@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+document.write("<caption> 책 주문 입력 내용 </caption>");
+document.write("<table border='1'>")
+document.write("<tr>");
+document.write("<th> 제목 </th>");
+document.write("</tr>");
+ 
+var book1 = "1: 컴퓨터와 IT기술의 이해 [개정판-2판]";
+var book2 = "2: 소셜미디어의 이해와 활용";
+var book3 = "3: 멀티미디어 배움터 2.0";	
+
+var book_list = book1 + "\n" + book2 + "\n" + book3;
+var choice = prompt("책번호를 입력하세요...\n"+book_list, "1");
+/* choice의 값에 따라 실행 */
+if(choice==null || choice==""){
+	alert("값을 입력하세요");
+}
+
+/* 첫번째 비교연산 and 두번째 비교연산  */
+if(choice!=null && choice!=""){
+	alert("값을 입력했습니다. 입력값은" +choice);
+}
+document.write("</table>");
+</script>
+</body>
+</html>

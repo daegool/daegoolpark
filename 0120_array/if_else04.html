@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+document.write("<caption> 책 주문 입력 내용 </caption>");
+document.write("<table border='1'>")
+document.write("<tr>");
+document.write("<th> 제목 </th>");
+document.write("</tr>");
+ 
+var book1 = "1: 컴퓨터와 IT기술의 이해 [개정판-2판]";
+var book2 = "2: 소셜미디어의 이해와 활용";
+var book3 = "3: 멀티미디어 배움터 2.0";	
+
+var book_list = book1 + "\n" + book2 + "\n" + book3;
+var choice = prompt("책번호를 입력하세요...\n"+book_list, "1");
+/* choice의 값에 따라 실행 if~else-if~else 문 */
+if(choice==null || choice==""){
+	alert("값을 입력하세요");
+}else if(choice=="1"){
+	alert("1");
+    title=book1;/* title은 전역변수로 사용됨- 어디서든 사용가능한 변수(var 키워드 없이 선언하여 사용됨.) */
+}else if(choice=="2"){
+	alert("2");
+	title=book2;
+}else if(choice=="3"){
+	alert("3");
+	title=book3;
+}else{
+	alert("리스터에 없는 책을 선택하였씁니다.");
+	title="";
+}	
+document.write("<tr>");
+document.write("<td>"+title+"</td></tr>");
+document.write("</table>");
+</script>
+</body>
+</html>

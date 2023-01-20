@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>윈도우 객체</title>
+</head>
+<body>
+<script>
+/* 팝업형태로 윈도우 열기 window.open(오픈하려는 페이지/url); 
+ * 팝업창을 뛰우는 현재페이지를 opener라고 함.
+*/
+var win;
+function open_window(){
+	var url="childPage.html";
+	if(url){
+	  win=window.open(url,"중복확인","width=400px,height=400px");
+	  console.log(win);
+	}
+ }
+</script>
+<div id="result"></div>
+<button onclick="open_window();">Open a page with new window</button>
+
+<button onclick="win.close();">Close the window window</button>
+
+</body>
+</html>

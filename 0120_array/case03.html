@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head>
+<meta charset="UTF-8">
+<title>swith문</title>
+</head>
+<body>
+<script>
+
+var choice = prompt("시간을 입력하세요");
+
+/* choice의 값에 따라 실행, 미리 지정한 case 문의 값에 따라 해당 명령문 실행 */
+
+var schedule="";
+switch(choice){
+case "7": schedule+="7시-기상,"; /* schedule = schedule+"기상" */
+case "8": schedule+="8시-아침운동,"; 
+case "9": schedule+="9시-출근,"; 
+case "10": schedule+="10시-회의,";
+case "11": schedule+="11시-외근,"; 
+case "12": schedule+="12시-식사";
+
+}
+
+document.write("<tr>");
+document.write("<td>"+choice+"이후의 스케줄: "+schedule+"</td></tr>");
+document.write("</table>");
+</script>
+</body>
+</html>

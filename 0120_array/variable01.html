@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>변수 선언 예제</title>
+</head>
+<body>
+<script>
+/* 식(expression=명령문)의 구분은 ;으로 표시함   */
+/* 변수의 선언언 스크립트의 가장 윗쪽(앞쪽) 표시하는게 일반적 */
+/* var는 변수를 선언한다는 표시의 예약어, 
+   변수 index를 선언,
+   변수 name를 선언과 동시에 초기값을 저장
+ */	
+ var index,name="모바일 웹";/* 선언식(선언(명령)문) , 변수선언시 초기값인 "모바일 웹"를 리터럴(literal)*/
+ /* 브라우저의 콘솔 영역에 로그 출력
+   console.log(출력내용1,출력내용2,...);  
+ */
+ console.log("변수명 index의 타입:",typeof(index),"..","변수 name의 타입:",typeof(name));/* 함수호출 명령문  */
+/* start라는 변수에 정수 숫자값 0 저장, end라는 변수에 실수 숫자값 100.0저장 */ 
+ var start=0, end=100.0; /* 선언 명령문, 0과 100.0도 리터럴 */
+console.log("start의 타입:",typeof(start),"..","end의 타입:",typeof(end)); /* 함수호출 명령문 */
+var message, condition, sender, receiver;/* 선언문 */
+console.log(typeof(message),typeof(condition),typeof(sender),typeof(receiver)); /* 함수 호출문 */
+
+var a="3";/* 선언문, "3"도 리터럴 */
+var b=2;/* 선언문 숫자2도 리러털 */
+
+/* 숫자타입(number) + 문자타입(string) => 숫자타입이 문자타입으로 자동 타입변환  */
+c=b+3+a;/* 식명령문 -연산식(연산명령문): 2+3+"3" => 5+"3" => "5"+"3" => "53", c="53", */
+c=b+a+3;/* 2 + "3" + 3, "2"+"3" + 3 => "23"+2 =>"23"+"2" => "232" */
+console.log("결과:",c);
+/* 문자타입(string) + 숫자타입(number) => 숫자타입이 문자타입으로 자동 타입변환  */
+d=a+b;/* 식명령문 -연산식(연산명령문): "3"+ 2 => "3" + "2" => "32", d="32" */
+console.log("결과:",d, typeof(d));
+</script>
+</body>
+</html>

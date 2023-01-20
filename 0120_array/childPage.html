@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+function returnResult(){
+window.opener.document.getElementById('result').innerHTML="중복확인";
+window.close();
+}
+</script>
+<h3>확인페이지</h3>
+<button onclick="returnResult();">확인</button>
+</body>
+</html>
