@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+<link rel="stylesheet" type="text/css" href="./css/style-size.css"/>
+<link rel="stylesheet" type="text/css" href="./css/style-layout.css"/>
+<link rel="stylesheet" type="text/css" href="./css/style-presentation.css"/>
+</head>
+<body id="signup">
+<form action="">
+<fieldset>
+<legend>회원가입</legend>
+<span>사용자 아이디</span> 
+<input id="username" type="text" required><input type="button" value="중복체크" disabled><br>
+<span>비밀번호</span> <input id="pass1" type="password" required> <br>
+<span>비밀번호 확인</span> <input id="pass2" type="password" required> <br>
+<span>이름</span> <input type="text" required> <br>
+<span>전화번호</span> <input type="tel" required placeholder="00*-000*-0000*"
+pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}"> <br>
+<span>이메일</span> <input type="email" required> <br>
+<span>생일</span> <input type="date" required> <br>
+<span>연령대</span>  
+        <select>
+            <option>10대 이하</option>
+            <option>20대</option>
+            <option>30대</option>
+            <option>40대</option>
+            <option>50대 이상</option>
+        </select><br/>
+<span>관심분야</span>
+        <label>인문학
+          <input type="checkbox" value="humanity" name="interest"></label>
+        <label>교육
+          <input type="checkbox" value="education" name="interest"></label>
+        <label>예술
+          <input type="checkbox" value="art" name="interest"></label>
+        <label>컴퓨터
+          <input type="checkbox" value="computer" name="interest"></label>
+        <label>기타분야
+          <input type="checkbox" value="etc" name="interest"></label>  <br/>
+      
+        <span>배경 색상</span> <input type="color"/><br/>           
+<span>간단한 자기소개</span><br/> <!-- 왜 span을 넣으면 안될까 width때문(사이즈가 작아서) -->
+<textarea cols="30" rows="5">간단한 자기소개를 써주세요.</textarea>
+</fieldset>
+<input  id="signup_button"  type="submit" value="회원가입" disabled>
+<input  id="reset2" type="reset" value="취소" disabled>
+</form>
+</body>
+</html>

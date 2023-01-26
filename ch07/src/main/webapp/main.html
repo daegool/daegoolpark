@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome to SM서적</title>
+<link rel="stylesheet" type="text/css" href="./css/style-size.css"/>
+<link rel="stylesheet" type="text/css" href="./css/style-layout.css"/>
+<link rel="stylesheet" type="text/css" href="./css/style-presentation.css"/>
+<style>
+
+
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+    <a id="logo" href="main.html"> SM Bookstore </a>
+    <span class="right" >
+        <a href="login.html" target="display_area">로그인</a> | <!-- target iframe -->
+        <a href="signup.html" target="_blank">회원가입</a>
+    </span>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="domestic_books.html" target="display_area">국내도서</a></li>
+        <li><a href="foreign_books.html" target="display_area">해외번역도서</a></li>
+        <li><a href="music.html" target="display_area">음반/DVD</a></li>
+        <li class="right"><a href="order.html" target="display_area">주문하기</a></li>
+    </ul>
+</nav>
+
+<hr>
+
+<article class="left">
+    <iframe name="display_area" src="images/books.jpg"
+            width="600px" height="500px"></iframe>
+</article>
+
+<aside class="right">
+    <button id="all" disabled>전체</button><br/>
+    <button id="best"  disabled>베스트셀러</button><br/>
+    <button id="recommend"  disabled>추천도서</button><br/>
+    <button id="memo"  disabled>메모하기</button><br/>
+    <button id="location"  disabled>현재위치</button>
+</aside>
+
+<hr>
+
+<footer>  
+   <div id="copyright">
+       Copyright (c) 2016 SM Bookstore Inc. All rights reserved
+   </div>
+   <div id="SNS">
+       <a href="http://facebook.com" target="_blank">
+           <img src="images/facebook.png"  alt="Facebook">
+       </a>
+       <a href="http://twitter.com" target="_blank">
+           <img src="images/twitter.png"  alt="Twitter">
+       </a>
+       <a href="http://plus.google.com" target="_blank">
+           <img src="images/googleplus-icon.png"  alt="Google Plus">
+       </a>
+    </div>
+</footer>
+</div>
+</body>
+</html>

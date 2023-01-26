@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/*presentation*/
+.wrap{text-align: left; background-color: white;}
+body{background-color: gray;}
+img{border:none;}
+#logo{color:darkblue;font-size:48px;}
+header .right a:hover{color:gray}
+nav{background-color:aqua;}
+nav ul{list-style: none; font-family: verdana,Geneva,sans-serif;
+font-size: 14px; font-weight:bold; color:#ff0099;}
+nav a{color: #000000; border-style:hidden hidden solid hidden;
+border-color: transparent;} /*transparent - 투명하게*/
+nav a:hover{color:#2b4490; border-color: blue;}
+footer #copyright{font-family: consolas;}
+
+/*domestic_books.html*/
+.booklist{font-family: arial; background-color: #f0f0f0;
+background-image: url(../images/cloud.jpg); /*css파일의 위치에서 상대경로로 지정*/
+background-repeat: no-repeat;
+background-position: 0px 0px; border:solid 3px steelblue;
+border-radius:10px;}
+.booklist .head{font-size: 16px; font-weight: bolder;}
+.booklist ul li{font-size: 12px; list-style-type: none;} /*disc, circle, square*/
+.booklist ul li img{border:solid; border-color: lightgray; border-width: 1px;}
+
+/*foreign_books.html*/
+.musiclist ul li{font-size: 12pxl; font-weight:  bold; 
+text-shadow: 0.2em 0.2em 0.2em 0.2em white;}
+.musiclist{background-image: url(../images/aerialview.jpg); }
+
+/*login.html*/
+#login{background-color: #d8d8d8;}
+#login input[type="submit"], input[type="button"]{color:blue;}
+/*속성선택자 - 선택자[속성]*/
+
+/*signup.html*/
+#signup{background-color: #d8d8d8;}
+#signup input[type="submit"], input[type="reset"],
+input[type="date"] {color:blue;}
+
+/*#signup input[type="submit"], input[type="reset"] 별개임
+#signup input[type="reset"] 각각 써줘야 적용이 됨
+*/
+
+/*order.html*/
+#order{background-color: #d8d8d8;}
+#order .head{font-size:16px; font-weight: bolder;}
+#order table{border-collapse: collapse;}
+#order table td, th{text-align:center;}
+#order table th,tr,td{border:1px solid silver}
+#order table input{background-color: transparent; color:blue;}
+#order input[type="submit"]{color:blue;}

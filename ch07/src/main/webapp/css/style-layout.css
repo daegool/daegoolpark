@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* style-layout */
+body{margin: 0; padding: 0; /* 모든 요소들의 마진, 패딩 통일  */
+     line-height: 1.2em;/* 줄간격   */
+     font-size: 0.75em;/* 글자크기 */
+}
+.wrap{margin: 0; margin-right: auto; margin-left: auto;}/* wrap이 감싸고 있는 요소들을 중앙 정렬 */
+header{vertical-align: middle;}/* header내의 콘텐츠의 수직 정렬 */
+.left{float:left;}/* 블럭레벨 요소를 왼쪽에 띄워서 배치  */
+.right{float:right;}/* 블럭레벨 요소를 오른쪽에 띄워서 배치 */
+#logo{float: left; vertical-align: middle; margin: 30px 0 0 20px;}
+footer #copyright{margin: 20px 0 0 10px; float:left;}
+footer #SNS{margin: 10px 20px 0 0; float: right;}
+hr{clear: both;}/* 위쪽에 배치한 요소들의 float 속성을 현재 위치에서 제거함. */
+article{margin: 5px 0 10px 0;}
+aside{margin: 5px;}
+nav{margin: 0 0 20px 0; float: left;}
+nav ul  li {float: left; margin: 0 5px; /* 위/아래 0, 좌/우 5px */ list-style: none;}
+nav a{display:block; padding:5px;}
+a{text-decoration: none;}
+
+/*domestic_books.html*/
+.booklist{margin:10px; padding: 5px;}
+.booklist .head{margin:15px 0 0 10px;}
+.booklist ul li{float:left; margin:5px 5px 10px 5px; list-style: none;}
+
+/*login.html*/
+#login{margin: 30px;}
+#login fieldset span{display: inline-block; vertical-align: middle;
+}/*화면배치는 인라인레벨요소로 배치, 마진 패딩 높이 폭 지정*/
+
+/*signup.html*/
+#signup{margin: 30px;}
+#signup fieldset span{display: inline-block; vertical-align: middle;
+}
+
+/*order.html*/
+#order table td, th{width:150px; height:30px;}

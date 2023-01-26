@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/*style-size*/
+.wrap{width:700px; min-height:600px;}
+header{height:80px;}
+header > span{padding: 30px 10px;} /*자식요소들중 바로아래 span만 (전체)*/                
+nav{width:700px;}
+nav a{height:20px;}
+footer{height:70px;}
+aside button{width:85px;}
+footer img{height:32px;}
+
+/*domestic_books.html*/
+.booklist{height:462px;}
+.booklist ul li{width:150px; height:180px;}
+.booklist ul li img{height:120px;}
+
+/*foreign_books.html*/
+.musiclist ul li{width: 530px;} 
+.booklist ul li audio, video{width:330px; }
+.booklist ul li video{height:120px;}
+
+/*login.html*/
+#login fieldset span{width:80px;} 
+/*인라인레벨 요소이므로 폭지정이 적용암됨 -> display: inline-block으로 지정하면 적용됨*/
+
+/*signup.html*/
+#signup fieldset span{width:90px;}
+
+/*order.html*/
+#order{margin: 30px;}
+#number{width:30px;}
