@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form name="form1"action="">
+<input id="input1" value="value of from">
+</form>
+<script type="text/javascript">
+txt = document.getElementById("input1").value;
+document.write("access using getElementsById:"+txt+"<br>");
+txt = document.form1.input1.value;
+document.write("access using from_name.id:"+txt+"<br>");
+txt = document.forms[0].input1.value;
+document.write("access using froms[index].id:"+txt+"<br>");
+txt = document.forms[0].elements[0].value;
+document.write("access using froms[index].elements[index].id:"+txt+"<br>");
+</script>
+
+</body>
+</html>

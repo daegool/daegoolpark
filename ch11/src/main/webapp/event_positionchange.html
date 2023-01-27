@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div id="outerBox" style="background:blue; width:550px; height:300px;">
+<div id="innerBOX"
+style="background:yellow; width:450px; height:200px; position:absolute;
+left:50px; top:30px">
+<img id="img1" src="./img/image1.png" width="100px" style="position:absolute;
+left:50px; top:25px; visibility:visiblle;">
+<img id="img2" src="./img/image2.png" width="100px"  style="position: absolute; 
+left: 175px; top: 25px; visibility: visible;">
+<img id="img3" src="./img/image3.png" width="100px" style="position: absolute; 
+left: 300px; top: 25px; visibility: visible;">
+
+</div>
+</div>
+
+<script type="text/javascript">
+function changePosition() {
+   for(i=1; i<=3;i++){
+	var left =document.getElementById("left"+i).value;
+	var top =document.getElementById("top"+i).value;
+	document.getElementById("img"+i).style.left=left+"px";
+	document.getElementById("img"+i).style.top=top+"px";
+   }
+}
+</script>
+<form>
+Image1: Left<input id="left1" size="2"> Top<input id="top1" size="2"><br>
+Image2: Left<input id="left2" size="2"> Top<input id="top2" size="2"><br>
+Image3: Left<input id="left3" size="2"> Top<input id="top3" size="2"><br>
+
+<input type="button" value="Move ALL" onclick="changePosition();">
+</form>
+Toggle Visibility:
+<button onclick="changeColor('innerBOX','red')">Image 1</button>
+<button onclick="changeColor('innerBOX','blue')">Image 2</button>
+<button onclick="changeColor('innerBOX','green')">Image 3</button>
+
+</body>
+</html>

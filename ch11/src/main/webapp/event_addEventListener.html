@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+
+<input id="username" value="Name of User">
+
+</form>
+
+<script type="text/javascript">
+function myEventHandler(){
+ alert("Please type your full name");
+}
+
+var dom = document.getElementById("username");
+dom.onclick=myEventHandler;/*()주의 myEventHandler()로 하면 오류남 */
+</script>
+</body>
+</html>

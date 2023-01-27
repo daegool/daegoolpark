@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function add(){
+	var a = document.getElementById("op11").value;
+	var b = document.getElementById("op21").value;
+	document.getElementById("result1").value=
+	   parseInt(a) + parseInt(b);
+	
+	
+}
+
+function sub(){
+	var a = document.getElementById("op12").value;
+	var b = document.getElementById("op22").value;
+	document.getElementById("result2").value=
+
+		parseInt(a) - parseInt(b);
+	
+}
+
+function mul(){
+	var a = document.getElementById("op13").value;
+	var b = document.getElementById("op23").value;
+	document.getElementById("result3").value=
+
+		parseInt(a) * parseInt(b);
+	
+}
+
+function div(){
+	var a = document.getElementById("op14").value;
+	var b = document.getElementById("op24").value;
+	document.getElementById("result4").value=
+
+		parseInt(a) / parseInt(b);
+	
+}
+
+function total(){
+	var t=0;
+	var sums = document.getElementsByClassName("sum");
+	
+
+	for(var i=0; i<sums.length;i++){
+		t+=parseInt(sums[i].value);
+	}
+	document.write("<input name='total' value='"+t+"'>");
+	
+	document.getElementById("sumtotal").value=t;
+}
+</script>
+</head>
+<body>
+<form>
+<input id="op11" type="text" size="2" >+
+<input id="op21" type="text" size="2">
+<input type="button" value="=" onclick="add();">
+<input id="result1" type="text" size="2" class="sum"> <br>
+
+<input id="op12" type="text" size="2">-
+<input id="op22" type="text" size="2">
+<input type="button" value="=" onclick="sub();">
+<input id="result2" type="text" size="2" class="sum"> <br>
+
+<input id="op13" type="text" size="2">x
+<input id="op23" type="text" size="2">
+<input type="button" value="=" onclick="mul();">
+<input id="result3" type="text" size="2" class="sum"> <br>
+
+<input id="op14" type="text" size="2">/
+<input id="op24" type="text" size="2">
+<input type="button" value="=" onclick="div();"> 
+<input id="result4" type="text" size="2" class="sum"> <br>
+
+<input type="button" value="합계" onclick="total();"> 
+<input type="text" name="sumtotal" id="sumtotal">
+</form>
+</body>
+</html>
