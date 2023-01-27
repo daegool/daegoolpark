@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 라이브러리 연결 Ctrl-spacebar 확인 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+ <!-- jQuery 라이브러리를 이용한 DOM객체 핸들링 -->
+ <script>
+ /*웹페이지를 모두 불러왔을때 처리하는 코드*/
+ $(document).ready(function(){
+	 const $headers= $('h1'); //document.getElementsByName('h1');
+   $('h1').each(function (index, element){
+	   /*↑반복처리 each(function (index, item)*/
+	  if(index % 2 == 1){
+		  $(this).css('background','yellowgreen'); /*this는 index에 해당*/
+	  } 
+   });
+ });
+ </script>
+</head>
+<body>
+ <h1>HeaderA</h1>
+    <h1>HeaderB</h1>
+    <h1>HeaderC</h1>
+    <h1>HeaderD</h1>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+<script>
+$().ready(function(){
+	
+	$('<h1></h1>')
+	.text('안녕하세요')
+	.attr('data-test','test')
+	.css({
+		backgroundColor:'yellowgreen',
+	    color:'white'
+	})
+	.appendTo('body');
+});
+</script>
+</head>
+<body>
+
+</body>
+</html>

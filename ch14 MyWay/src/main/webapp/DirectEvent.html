@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	/*'h1' 태그에 click 이벤트에 대한 처리 연결*/
+	$('h1').on('click',function(event){
+		const text = $(this).text();
+		alert(text);
+	});
+	
+});
+
+</script>
+</head>
+<body>
+<h1>Header_1</h1>
+<h1>Header_2</h1>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 라이브러리 연결 Ctrl-spacebar 확인 -->
+ <script src="./js/jquery-3.6.3.min.js"></script>
+ <!-- jQuery 라이브러리를 이용한 DOM객체 핸들링 -->
+ <script>
+ /*웹페이지를 모두 불러왔을때 처리하는 코드*/
+ $(document).ready(function(){
+	 const $headers= $('h1'); //document.getElementsByName('h1');
+     console.log($headers.length);
+    
+     //h1 태그 갯수만큼 반복처리
+     for(let i=0;i<$headers.length;i++){
+     if(i%2==0){ /*1은홀수 , 0은 짝수 ※index가 0부터 세기때문에*/
+    	 const domElement = $headers.get(i); 
+     $(domElement).css('background','red');
+     }
+     }
+ });
+ </script>
+</head>
+<body>
+ <h1>HeaderA</h1>
+    <h1>HeaderB</h1>
+    <h1>HeaderC</h1>
+    <h1>HeaderD</h1>
+
+</body>
+</html>

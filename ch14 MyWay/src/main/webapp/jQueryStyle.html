@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+<script>
+$().ready(function(){
+
+	for(let i =0; i<256; i++){
+		/*$(선택자).css({스타일1,스타일2,,,}).appendTO(부착할요소)*/
+		$('<div></div>').css({
+			height:2,
+			background: 'rgb('+i+','+i+','+i+')'
+		}).appendTo('body');
+	}
+	 
+});
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

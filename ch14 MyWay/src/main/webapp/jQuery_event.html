@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('h1').on('click', function(event){
+		$('<h1></h1>').text($(this).text()).appendTo('body');
+	});
+	
+});
+
+</script>
+</head>
+<body>
+<h1>Header_1</h1>
+<h1>Header_2</h1>
+</body>
+</html>

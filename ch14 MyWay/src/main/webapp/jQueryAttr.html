@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+<script>
+$().ready(function(){
+	/*each(function(인덱스,요소){})*/
+	/*[0]  [1]  [2]*/
+	/*첫번째img 두번째 세번째*/
+	$('img').each(function(index,item){
+		
+	$(this).attr('src','https://via.placeholder.com/'+(index+1)*100+'x100');
+	});
+});
+
+</script>
+</head>
+<body>
+<img>
+<img>
+<img>
+</body>
+</html>

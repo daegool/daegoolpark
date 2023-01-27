@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	//핸들러 선언
+	const handler = function(event){
+		$('<h1></h1>').text($(this).text())
+		.on('click',handler)
+		.appendTo('body');
+	
+	};
+	//h1 태그에 click 이벤트 처리
+	$('h1').on('click',handler);
+});
+
+</script>
+</head>
+<body>
+<h1>Header_1</h1>
+<h1>Header_2</h1>
+</body>
+</html>
