@@ -1,0 +1,41 @@
+<!DOCTYPE html><html><head>
+<meta charset="UTF-8">
+<title>geolocation</title>
+<script>
+var watchID,i=0;
+function startMyLocation(){
+	/* geolocation객체 여부확인 */
+	if(navigator.geolocation){
+		watchID = navigator.geolocation.getCurrentPosition(myCallback);
+	}else{
+		alert('지오로케이션이 지원되지 않습니다.');
+	}
+}
+
+function myCallback(myposition){
+	var latitude = myposition.coords.latitude;
+	var longitude = myposition.coords.longitude;
+	var date = new Date(myposition.timestamp);
+	parseDate = date.toUTCString();
+	document.getElementById("display").innerHTML 
+	 += "<br>[" +(i++)+ ']위치:일시'
+	    +parseDate+'에 위도'+latitude+',경도'+longitude+"에 있습니다.";
+}
+
+function stopMyLocation(){
+	if(navigator.geolocation){
+		navigator.geolocation.clearWatch(watchID);
+		document.getElementById("display").innerHTML+='<br>**추적 완료!**';
+	}else{
+		alert("지오로케이션이 지원되지않습니다.");
+	}
+}
+</script>
+</head>
+<body>
+<h3>단발성 위치정보 요청하기</h3>
+<button onclick="startMyLocation();">위치정보확인</button>
+<button onclick="stopMyLocation();">위치추적종료</button>
+<div id="display">위치:</div>
+</body>
+</html>

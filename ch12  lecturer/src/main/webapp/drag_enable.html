@@ -1,0 +1,32 @@
+<!DOCTYPE html><html><head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div id="dragsrc" style="display: block;">
+ <img id="html5" src="images/icon_html5.png" style="display:inline; width:150px;" draggable="true">
+ <img id="css3" src="images/icon_css3.png" style="display:inline; width:150px;" draggable="false">
+ <img id="js" src="images/icon_js.png" style="display:inline; width:150px;">
+</div>
+<div id="dragprocess"></div>
+
+<script>
+var src = document.getElementById('dragsrc'),
+          srcid,i=0;
+          process = document.getElementById("dragprocess");
+/* 드래그 시작이벤트 처리 */
+src.ondragstart = function(e){
+	srcid = e.target.id;
+	process.innerHTML = "start:"+srcid+"<br>";
+}
+/* 드래그 진행 이벤트 처리 */
+src.ondrag=function(e){
+	process.innerHTML = "start:"+srcid+"<br>drag:"+srcid+"["+(i++)+"]";
+}
+/* 드래그 완료 이벤트 처리 */
+src.ondragend=function(e){
+	process.innerHTML +="<br>end:"+srcid+"<br>";
+}
+</script>
+</body>
+</html>
