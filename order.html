@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>주문</title>
+<link rel="stylesheet" type="text/css" href="./css/style-size.css"/>
+<link rel="stylesheet" type="text/css" href="./css/style-layout.css"/>
+<link rel="stylesheet" type="text/css" href="./css/style-presentation.css"/>
+<script type="text/javascript">
+
+/*function count(){
+	var a = document.getElementById("qt1").value;
+	var b = document.getElementById("qt2").value;
+	var c = document.getElementById("qt3").value;
+	document.getElementById("qty_total").value=
+	   parseInt(a) + parseInt(b) + parseInt(b);
+		
+}*/
+
+/*function price(){
+	var a = document.getElementById("qt1").value;
+	var a2 = document.getElementById("pr1").value;
+	var b = document.getElementById("qt2").value;
+	var b2 = document.getElementById("pr2").value;
+	var c = document.getElementById("qt3").value;
+	var c2 = document.getElementById("pr3").value;
+	
+	document.getElementById("result1").value=
+		   parseInt(a) * parseInt(a2);
+	document.getElementById("result2").value=
+		   parseInt(b) * parseInt(b2);
+	document.getElementById("result3").value=
+		   parseInt(b) * parseInt(b2);
+}*/
+function sumtotal(){
+	var a = document.getElementById("qt1").value;
+	var a2 = document.getElementById("pr1").value;
+	var b = document.getElementById("qt2").value;
+	var b2 = document.getElementById("pr2").value;
+	var c = document.getElementById("qt3").value;
+	var c2 = document.getElementById("pr3").value;
+	
+	document.getElementById("result1").value=
+		   parseInt(a) * parseInt(a2);
+	document.getElementById("result2").value=
+		   parseInt(b) * parseInt(b2);
+	document.getElementById("result3").value=
+		   parseInt(c) * parseInt(c2);
+	
+	var t=0;
+	var sums = document.getElementsByClassName("qty"); 
+	
+	for(var i=0; i<sums.length;i++){
+		t+=parseInt(sums[i].value);
+	}
+	
+	
+	var t2=0;
+	var sums2 =  document.getElementsByClassName("results");
+
+	for(var i=0; i<sums2.length;i++){
+		t2+=parseInt(sums2[i].value);
+	}
+	
+	
+	document.getElementById("qty_total").value=t; 
+	document.getElementById("sum_total").value=t2;
+}
+</script>
+</head>
+
+<body id="order">
+<div class="head"> 서적 주문 양식 </div>
+<form action="">
+    <p>주문서</p>
+    <table>
+        <tr> <th> 책 제목 </th> <th> 가격 </th> <th> 수량 </th> <th> 합계 </th> </tr>
+        <tr>
+            <td> 컴퓨터와 IT기술의 이해 [개정판-2판] </td> <td> 27,000원 
+            <input type="hidden" id="pr1" value="27000"></td>
+
+            <td> <input type="text"  value="0" id="qt1" class="qty"> </td>
+<!-- id줘야함 --><td> <input type="text" size= "6" value="0" id="result1" class="results"> 원</td>
+<!-- class도줘야함 수량,가격 다 -->
+        </tr>
+       <!-- <input type="hidden" id="pr2" value="27,000"> -->
+        <tr>
+            <td> 소셜미디어의 이해와 활용 <td> 21,000원 
+            <input type="hidden" id="pr2" value="21000"> </td>
+                
+            <td> <input type="text"  value="0" id="qt2" class="qty"> </td>
+            <td> <input type="text" size= "6" value="0" id="result2" class="results"> 원</td>
+        </tr>
+        <tr>
+            <td> 비즈니스 정보 시스템 </td> <td> 28,000원 
+            <input type="hidden" id="pr3" value="28000"> </td>
+                
+            <td> <input type="text" value="0" id="qt3" class="qty"> </td>
+            <td> <input type="text" size= "6" value="0" id="result3" class="results"> 원</td>
+        </tr>
+        <tr>
+            <td> 합계 </td> <td> &nbsp; </td>
+            <td> <input type="text" size="6" value="0"  id="qty_total"> </td>
+            <td> <input type="text" size= "6" value="0"  id="sum_total"> 원</td>
+        </tr>
+    </table> <br />
+   <!-- <input type="button" value="수량" onclick="count();">  --> 
+   <!--   <input type="button" value="가격" onclick="price();">  -->
+    <input type="button" value="합계계산" onclick="sumtotal();">
+    <input type="reset" value="초기화">
+    <input type="submit" value="주문하기">
+</form>
+</body>
+</html>
